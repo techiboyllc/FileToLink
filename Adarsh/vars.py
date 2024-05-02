@@ -9,20 +9,20 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', '20389440'))
-    API_HASH = str(getenv('API_HASH', 'a1a06a18eb9153e9dbd447cfd5da2457'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN', ''))
+    API_ID = int(getenv('API_ID', '11482890'))
+    API_HASH = str(getenv('API_HASH', 'c034759952399cc34bd31e87bea8cb8b'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN', '6401626913:AAE_jo-A6U-8AF-YBBtgRUJB8Eu7pCPBH6M'))
     name = str(getenv('name', 'filetolinkvjbot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001935365147'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001976413677'))
     PORT = int(getenv('PORT', 8080))
-    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
+    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', 'http://bot.streampaste.com'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "6168162777").split())  
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "878334582").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'kingvj01'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'dryland21))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
